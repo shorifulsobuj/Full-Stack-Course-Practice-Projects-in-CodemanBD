@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img src="/img/logo/shopify.png" alt="shopify">
+                <div class="paragraph">
+                    <p>If there was a 10 start I’d give it. When I found Smart Slider 3 instantly knew that this was
+                        the
+                        <span>premium slider</span> I needed for all my projects.
+                    </p>
+                </div>
+                <img src="/img/image/jane lainn.png" alt="Jane image">
+                <h5>JANE LINN</h5>
+                <p>Community Manager</p>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="/img/logo/evernote.png" alt="evernote">
+                <div class="paragraph">
+                    <p>Cannot recommend this plugin highly enough. <span>Get the Pro version.</span> Use the Slider
+                        and
+                        all your website dreams will come true.
+                    </p>
+                </div>
+                <img src="/img/image/james smith.png" alt="James image">
+                <h5>JAMES SMITH</h5>
+                <p>PHP Developer</p>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="/img/logo/airbnd.png" alt="airbnd">
+                <div class="paragraph">
+                    <p>I’ve been searching for a good free slider plugin for a long time. <span>This is definitely
+                            the
+                            one!</span> For a free plugin it does a lot of things!
+                    </p>
+                </div>
+                <img src="/img/image/zack salomon.png" alt="Zack image">
+                <h5>ZACK SALOMON</h5>
+                <p>Head Developer</p>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="/img/logo/dropbox.png" alt="dropbox">
+                <div class="paragraph">
+                    <p>Smart Slider 3 is <span>more than powerful.</span> It is amazing.Thanks to developer for
+                        putting
+                        so much
+                        effort to create this well-thought plugin.
+                    </p>
+                </div>
+                <img src="/img/image/diana miller.png" alt="Diana image">
+                <h5>DIANA MILLER</h5>
+                <p>Marketing Manager</p>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="/img/logo/google.png" alt="google">
+                <div class="paragraph">
+                    <p>The backend of the plugin is <span>beautifully designed</span> and fairly intuitive –
+                        although
+                        there are so
+                        many options, it’s almost daunting.
+                    </p>
+                </div>
+                <img src="/img/image/ryan vidal.png" alt="ryan image">
+                <h5>RYAN VIDAL</h5>
+                <p>Interactive Designer</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>

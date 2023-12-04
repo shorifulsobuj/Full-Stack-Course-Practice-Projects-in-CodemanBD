@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Young+Serif&display=swap");
+
+html,
+body {
+  background-color: rgb(174, 157, 125);
+}
+
+/* main section */
+
+/* .tasks {
+  display: flex;
+  margin-left: 38%;
+  margin-top: 7%;
+  height: 700px;
+  max-width: 600px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  background-color: white;
+} */
+
+/* form section */
+.container {
+  border: 1px solid black;
+  display: flex;
+  height: 50px;
+  width: 400px;
+}

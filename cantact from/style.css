@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+header {
+  background-color: #102542;
+  padding: 30px 0;
+}
+
+.logo {
+  color: #f7a278;
+  font-size: 24px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul {
+  display: flex;
+  gap: 10px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.btn-primary {
+  background-color: #c9dcb3;
+  color: #f87060;
+  text-decoration: none;
+  padding: 12ps 15px;
+  display: inline-block;
+}
+
+/* hero section */
+.hero {
+  height: 500px;
+  background-color: #fefae0;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.hero-wrapper {
+  width: 500px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}

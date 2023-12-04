@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Agbalumo;
+}
+
+header {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 4vh;
+  margin-bottom: 1.5rem;
+  color: rgb(50, 40, 40);
+  cursor: pointer;
+}
+
+header h1:hover {
+  font-size: 4vh;
+  margin-bottom: 1.5rem;
+  color: rgb(173, 66, 66);
+  cursor: pointer;
+}
+
+.search-form {
+  padding: 2rem;
+  display: flex;
+}
+
+.search-form input {
+  padding: 1rem;
+  font-size: 1rem;
+  width: 100%;
+  border: 3px solid rgb(153, 247, 197);
+}
+
+.search-form input:hover {
+  padding: 1rem;
+  font-size: 1rem;
+  width: 100%;
+  border: 3px solid rgb(0, 166, 255);
+}
+
+.search-form button {
+  font-family: inherit;
+  border: none;
+  padding: 0.8rem;
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.search-form button:hover {
+  font-family: inherit;
+  border: none;
+  padding: 0.8rem;
+  background-color: rgb(0, 166, 255);
+  color: white;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: 0.2s ease-in-out;
+}
