@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import MovieCard from "./MovieCard";
 
 export default function Movies() {
   const [movies, setMovies] = useState([]);
@@ -33,9 +34,9 @@ export default function Movies() {
     <>
       <h2>
         {movies.length > 0 ? (
-          <div>
+          <div className="movie-list">
             {movies.map((movie) => (
-              <li key={movie.id}>{movie.title}</li>
+              <MovieCard key={movie.id} movie={movie}></MovieCard>
             ))}
           </div>
         ) : (
