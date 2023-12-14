@@ -4,16 +4,19 @@ import Home from "./components/Home";
 import { Route, Routes } from "react-router-dom";
 import Movies from "./components/Movies";
 import About from "./components/About";
+import MovieDetails from "./components/MovieDetails";
 
 function App() {
   return (
     <>
       <Header></Header>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/all-movies" element={<Movies />}></Route>
-        <Route path="/about" element={<About />}></Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/all-movies" element={<Movies />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/movie/:id" element={<MovieDetails />} />
       </Routes>
+      {/* <Movies></Movies> */}
     </>
   );
 }
