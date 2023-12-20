@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1480px;
+  height: 1240px;
+}
+
+.nav {
+  padding: 10px;
+  text-align: center;
+  margin: 1;
+}
