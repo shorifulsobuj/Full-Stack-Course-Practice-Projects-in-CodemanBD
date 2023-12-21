@@ -119,11 +119,11 @@ h1.outline-text {
   margin: 50px 0px 0px;
   cursor: pointer;
 }
-.hero-section button:hover{
+.hero-section button:hover {
   box-shadow: 0px 0px 20px 0px #1df659;
 }
 .hero-img::after {
-  content: '';
+  content: "";
   position: absolute;
   background-image: url(img/shape.png);
   background-repeat: no-repeat;
@@ -133,36 +133,36 @@ h1.outline-text {
   height: 607px;
   z-index: -99;
 }
-.details{
+.details {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 70px;
 }
-.detail-box-1{
-  background: rgba(255,255,255,.2);
-  box-shadow: 0 4px 30px rgba(0,0,0,.1);
+.detail-box-1 {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(40px);
   border-radius: 0px 50px 0px 0px;
   padding: 35px;
   width: 450px;
 }
-.detail-box-2{
-  background: rgba(255,255,255,.2);
-  box-shadow: 0 4px 30px rgba(0,0,0,.1);
+.detail-box-2 {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(40px);
   border-radius: 50px 0px 0px 0px;
   padding: 35px;
   width: 450px;
 }
-.details h4{
+.details h4 {
   font-family: "Inter-Bold";
   font-weight: 700;
   color: white;
   font-size: 20px;
   text-transform: capitalize;
 }
-.details h6{
+.details h6 {
   font-family: "Inter-Regular";
   font-weight: 400;
   color: white;
@@ -172,7 +172,7 @@ h1.outline-text {
   line-height: 27px;
   text-transform: capitalize;
 }
-.discover-btn{
+.discover-btn {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -182,15 +182,15 @@ h1.outline-text {
   padding: 10px 13px;
   border-radius: 31px;
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
 }
-.arrow:hover{
-transform: translateX(10px);
+.arrow:hover {
+  transform: translateX(10px);
 }
-.description h5{
+.description h5 {
   font-family: "Inter-Regular";
   font-weight: 400;
-  color:#1df659;
+  color: #1df659;
   font-size: 17px;
   text-transform: capitalize;
   cursor: pointer;

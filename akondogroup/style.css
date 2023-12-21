@@ -2,15 +2,301 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  transition: 0.3s ease;
 }
 
 .container {
-  width: 1480px;
-  height: 1240px;
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.nav {
-  padding: 10px;
-  text-align: center;
-  margin: 1;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin-left: -15px;
+  margin-right: -15px;
 }
+
+.col-33 {
+  flex-basis: 33.33%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-25 {
+  flex-basis: 25%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-50 {
+  flex-basis: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-75 {
+  flex-basis: 75%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-100 {
+  flex-basis: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* 
+================
+Global css start
+================
+*/
+
+:root {
+  --main-color: #314d4a;
+  --text-color: #646d6c;
+  --heading-color: #0a8270;
+  --white: #fff;
+  --bg-color: #f6f3eb;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+p {
+  color: var(--text-color);
+  font-size: 18px;
+  line-height: 30px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn-primary,
+button {
+  background: var(--main-color);
+  padding: 10px 22px;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.btn-primary:hover,
+button:hover {
+  background: var(--heading-color);
+}
+
+.btn-exp a {
+  color: var(--main-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.btn-exp i {
+  color: var(--main-color);
+  margin-left: 10px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+/* section title */
+.section-title {
+  text-align: center;
+  width: 464px;
+  margin: auto;
+}
+
+.section-title h2,
+.section-title-left h2 {
+  margin-bottom: 15px;
+  font-size: 42px;
+  color: var(--heading-color);
+}
+
+/* 
+================
+Global css end
+================
+*/
+
+/* 
+================
+header area start 
+================ 
+*/
+.header {
+  padding: 35px 0;
+  background: var(--bg-color);
+}
+
+.header-in {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-in .left h2 {
+  font-size: 28px;
+  color: var(--heading-color);
+}
+
+.header-in .middle a.active {
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.header-in .middle a {
+  margin: 0 20px;
+  color: var(--text-color);
+}
+
+.header-in .mobile-menu a {
+  background: var(--main-color);
+  color: var(--white);
+  font-size: 20px;
+  padding: 10px 14px;
+}
+
+.header-in .mobile-menu a:hover {
+  background: var(--heading-color);
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* 
+================
+header area end 
+================ 
+*/
+
+/* 
+================
+hero area start 
+================  
+*/
+.hero {
+  background: var(--bg-color);
+}
+
+.hero .row {
+  align-items: center;
+}
+
+.hero .left h1 {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 80px;
+}
+
+.hero .left p {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.hero .left .btn-primary {
+  padding: 15px 40px;
+}
+
+.hero img {
+  position: relative;
+  margin-left: 60px;
+}
+
+/* 
+================
+hero area end 
+================  
+*/
+
+/* 
+================
+services area start 
+================  
+*/
+.services {
+  margin: 100px 0;
+}
+
+.services .section-title {
+  margin-bottom: 30px;
+}
+
+.service-item {
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  cursor: pointer;
+  margin-top: 20px;
+  border: 2px solid transparent;
+}
+
+.service-item:hover {
+  /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+  border: 2px solid var(--heading-color);
+  box-shadow: 0px 12px 24px 0px #00000012;
+}
+
+.service-item a {
+  display: inline-block;
+  color: var(--main-color);
+  width: 100px;
+  height: 100px;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 3.2;
+  background: var(--white);
+  font-size: 32px;
+  transition: 0.1s;
+  box-shadow: 0px 10px 20px 0px #0000000d;
+}
+
+.service-item:hover a {
+  background: var(--main-color);
+  color: var(--white);
+}
+
+.service-item h3 {
+  font-style: 20px;
+  color: var(--blue);
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 16px;
+}
+
+/* 
+================
+services area end 
+================  
+*/

@@ -1,25 +1,25 @@
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 ul li {
-    float: left;
+  float: right;
 }
 
 ul li a {
-    text-decoration: none;
-    color: black;
-    padding: 12px 22px;
-    background-color: beige;
+  text-decoration: none;
+  color: black;
+  padding: 12px 22px;
+  background-color: beige;
 }
 
 ul li a:hover {
-    background: #ff0000;
-    color: #fff
+  background: #ff0000;
+  color: #fff;
 }
 
 img src {
-    display: right;
+  display: right;
 }
