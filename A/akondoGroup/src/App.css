@@ -1,0 +1,59 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.2rem;
+}
+
+/* Header Styles  */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.logo > span,
+a {
+  color: rgb(64, 116, 43);
+}
+
+.contaner {
+}
+
+/* Home Styles  */
+
+.hero {
+  background-color: aliceblue;
+  height: 200px;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 14px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.hero h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin: 0;
+}
