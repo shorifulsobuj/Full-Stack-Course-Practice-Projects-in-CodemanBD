@@ -39,4 +39,8 @@ letter.forEach((letter) => {
 });
 
 gsap.set(".letter", { display: "inline-block" });
-gsap.fromTO(".letter", { y: "100%" }, { y: 0, delay: 1 });
+gsap.fromTo(
+  ".letter",
+  { y: "100%" },
+  { y: 0, delay: 1, stagger: 0.05, ease: "back.out" }
+);
