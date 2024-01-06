@@ -1,17 +1,19 @@
+import logo from "../img/akondogroup.png";
+
 import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <header>
+    <div className="header">
       <div className="logo">
-        Akondo <span>Group</span>
+        <img src={logo} alt="" />
       </div>
-      <nav className="navigation">
+      <div className="navigation">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
-      </nav>
-    </header>
+      </div>
+    </div>
   );
 }
 
