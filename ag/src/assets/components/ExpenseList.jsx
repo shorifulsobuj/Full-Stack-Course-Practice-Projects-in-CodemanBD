@@ -4,18 +4,18 @@ function ExpenseList() {
       <div className="overflow-x-auto">
         <table className="table">
           {/* head */}
-          <thead>
+          {/* <thead>
             <tr className="text-gray-300 text-xl">
               <th>Category</th>
               <th>Description</th>
               <th>Amount ($)</th>
               <th></th>
             </tr>
-          </thead>
+          </thead> */}
           <tbody>
             {/* row 1 */}
             <tr>
-              <th>Bazar</th>
+              <th>Baza22222r</th>
               <td>Household expense</td>
               <td>$40</td>
               <td>
