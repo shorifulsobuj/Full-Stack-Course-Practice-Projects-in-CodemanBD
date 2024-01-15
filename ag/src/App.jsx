@@ -74,12 +74,6 @@ function App() {
       description: "HP Laptop",
       amount: 990,
     },
-    {
-      id: 11,
-      category: "Laptop",
-      description: "aplle Laptop",
-      amount: 950,
-    },
   ];
 
   return (
