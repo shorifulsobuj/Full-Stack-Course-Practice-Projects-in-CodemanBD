@@ -15,17 +15,18 @@ import PageNotFound from "./pages/PageNotFound";
 function App() {
   return (
     <>
-      <MainLayout />
       <BrowserRouter>
         <Routes>
-          <Route index element={<Navigate replace to="/dashboard" />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/bookings" element={<Bookings />} />
-          <Route path="/rooms" element={<Rooms />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/settings" element={<Settings />} />
-          <Route path="/users" element={<Users />} />
-          <Route path="/account" element={<Account />} />
+          <Route element={<MainLayout />}>
+            <Route index element={<Navigate replace to="/dashboard" />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/bookings" element={<Bookings />} />
+            <Route path="/rooms" element={<Rooms />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/users" element={<Users />} />
+            <Route path="/account" element={<Account />} />
+          </Route>
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>

@@ -1,34 +1,4 @@
-#root {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0.2rem;
-}
-
-/* Header Styles  */
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: antiquewhite;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.logo img {
-  height: 45px;
-}
-
-.navigation {
-  display: flex;
-  gap: 20px;
-}
-
-/* Home Styles  */
-
-.hero img {
-  height: 300px;
-}
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"); */
 
 /* Footer section start */
 
@@ -66,13 +36,8 @@ header {
 }
 
 a {
-  color: rgb(175, 175, 179);
+  color: white;
   text-decoration: none;
-}
-
-a:hover {
-  color: #ef4036;
-  font-weight: 500;
 }
 
 .socialmedia {
