@@ -9,3 +9,13 @@ export async function getRooms() {
   }
   return data;
 }
+
+export async function deleteRooms(id) {
+  const { data, error } = await supabase.from("rooms").delete().eq("id", id);
+
+  if (error) {
+    console.error("Error! Rooms couldu't be Deleted !");
+    throw new Error("Rooms couldu't be Deleted !");
+  }
+  return data;
+}

@@ -1,17 +1,17 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Sidebar() {
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
 
   return (
     <>
-      {/*  <!-- Component: Basic side navigation menu --> */}
       {/*  <!-- Mobile trigger --> */}
       <button
         title="Side navigation"
         type="button"
-        className={`visible md:relative fixed left-6 top-6 z-40 order-10 block h-10 w-10 self-center rounded bg-white opacity-100 lg:hidden ${
+        className={`visible fixed left-6 top-6 z-40 order-10 block h-10 w-10 self-center rounded bg-white opacity-100 lg:hidden ${
           isSideNavOpen
             ? "visible opacity-100 [&_span:nth-child(1)]:w-6 [&_span:nth-child(1)]:translate-y-0 [&_span:nth-child(1)]:rotate-45 [&_span:nth-child(3)]:w-0 [&_span:nth-child(2)]:-rotate-45 "
             : ""
@@ -42,7 +42,7 @@ export default function Sidebar() {
       <aside
         id="nav-menu-1"
         aria-label="Side navigation"
-        className={`fixed top-0 bottom-0 left-0 z-40 flex w-72 flex-col border-r border-r-slate-200 bg-white transition-transform lg:translate-x-0 ${
+        className={`md:relative fixed top-0 bottom-0 left-0 z-40 flex w-72 flex-col border-r border-r-slate-200 bg-white transition-transform lg:translate-x-0 md:h-full ${
           isSideNavOpen ? "translate-x-0" : " -translate-x-full"
         }`}
       >
@@ -57,7 +57,7 @@ export default function Sidebar() {
             viewBox="0 0 300 300"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="h-8 w-8 bg-emerald-500"
+            className="h-8 w-8 bg-indigo-500"
           >
             <path
               fillRule="evenodd"
@@ -81,9 +81,9 @@ export default function Sidebar() {
           <div>
             <ul className="flex flex-1 flex-col gap-1 py-3">
               <li className="px-3">
-                <a
-                  href="/dashboard"
-                  className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-emerald-50 hover:text-emerald-500 focus:bg-emerald-50 aria-[current=page]:bg-emerald-50 aria-[current=page]:text-emerald-500 "
+                <NavLink
+                  to="/dashboard"
+                  className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-indigo-50 hover:text-indigo-500 focus:bg-indigo-50 aria-[current=page]:bg-indigo-50 aria-[current=page]:text-indigo-500 "
                 >
                   <div className="flex items-center self-center">
                     <svg
@@ -106,12 +106,12 @@ export default function Sidebar() {
                   <div className="flex w-full flex-1 flex-col items-start justify-center gap-0 overflow-hidden truncate text-sm">
                     Dashboard
                   </div>
-                </a>
+                </NavLink>
               </li>
               <li className="px-3">
-                <a
-                  href="bookings"
-                  className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-emerald-50 hover:text-emerald-500 focus:bg-emerald-50 aria-[current=page]:bg-emerald-50 aria-[current=page]:text-emerald-500 "
+                <NavLink
+                  to="/bookings"
+                  className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-indigo-50 hover:text-indigo-500 focus:bg-indigo-50 aria-[current=page]:bg-indigo-50 aria-[current=page]:text-indigo-500 "
                   aria-current="page"
                 >
                   <div className="flex items-center self-center ">
@@ -133,12 +133,12 @@ export default function Sidebar() {
                   <div className="flex w-full flex-1 flex-col items-start justify-center gap-0 overflow-hidden truncate text-sm">
                     Bookings
                   </div>
-                </a>
+                </NavLink>
               </li>
               <li className="px-3">
-                <a
-                  href="/rooms"
-                  className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-emerald-50 hover:text-emerald-500 focus:bg-emerald-50 aria-[current=page]:bg-emerald-50 aria-[current=page]:text-emerald-500 "
+                <NavLink
+                  to="/rooms"
+                  className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-indigo-50 hover:text-indigo-500 focus:bg-indigo-50 aria-[current=page]:bg-indigo-50 aria-[current=page]:text-indigo-500 "
                 >
                   <div className="flex items-center self-center ">
                     <svg
@@ -159,12 +159,12 @@ export default function Sidebar() {
                   <div className="flex w-full flex-1 flex-col items-start justify-center gap-0 overflow-hidden truncate text-sm">
                     Rooms
                   </div>
-                </a>
+                </NavLink>
               </li>
               <li className="px-3">
-                <a
-                  href="/settings"
-                  className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-emerald-50 hover:text-emerald-500 focus:bg-emerald-50 aria-[current=page]:bg-emerald-50 aria-[current=page]:text-emerald-500 "
+                <NavLink
+                  to="/settings"
+                  className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-indigo-50 hover:text-indigo-500 focus:bg-indigo-50 aria-[current=page]:bg-indigo-50 aria-[current=page]:text-indigo-500 "
                 >
                   <div className="flex items-center self-center ">
                     <svg
@@ -187,15 +187,12 @@ export default function Sidebar() {
                   <div className="flex w-full flex-1 flex-col items-start justify-center gap-0 overflow-hidden truncate text-sm">
                     Settings
                   </div>
-                  <span className="inline-flex items-center justify-center rounded-full bg-emerald-100 px-2 text-xs text-emerald-500 ">
-                    2<span className="sr-only"> new notifications</span>
-                  </span>
-                </a>
+                </NavLink>
               </li>
               <li className="px-3">
-                <a
-                  href="/users"
-                  className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-emerald-50 hover:text-emerald-500 focus:bg-emerald-50 aria-[current=page]:bg-emerald-50 aria-[current=page]:text-emerald-500 "
+                <NavLink
+                  to="/users"
+                  className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-indigo-50 hover:text-indigo-500 focus:bg-indigo-50 aria-[current=page]:bg-indigo-50 aria-[current=page]:text-indigo-500 "
                 >
                   <div className="flex items-center self-center ">
                     <svg
@@ -218,7 +215,7 @@ export default function Sidebar() {
                   <div className="flex w-full flex-1 flex-col items-start justify-center gap-0 overflow-hidden truncate text-sm">
                     Users
                   </div>
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
