@@ -2,6 +2,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { getRooms } from "../../api/apiRooms";
 import TableRow from "./TableRow";
+import CreateRoomForm from "./CreateRoomForm";
 
 export default function Table() {
   const {
@@ -66,6 +67,9 @@ export default function Table() {
         </tbody>
       </table>
       {/*<!-- End Responsive Table --> */}
+      <div className="w-[800px]">
+        <CreateRoomForm />
+      </div>
     </>
   );
 }
