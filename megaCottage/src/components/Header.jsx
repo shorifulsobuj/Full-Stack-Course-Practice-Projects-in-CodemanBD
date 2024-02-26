@@ -37,10 +37,10 @@ function Header() {
                 </a>
               </li>
               <li>
-                <a>Settings 2332</a>
+                <a>Settings</a>
               </li>
               <li>
-                <a>LogoutLogoutLogout</a>
+                <a>Logout</a>
               </li>
             </ul>
           </div>
