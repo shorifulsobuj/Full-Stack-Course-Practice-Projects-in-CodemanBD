@@ -8,7 +8,7 @@ export default function Rooms() {
   // }, []);
   return (
     <div>
-      Rooms
+      Rooms page
       <Table />
     </div>
   );

@@ -1,10 +1,5 @@
 function Login() {
-  return (
-    <div>
-      Login
-      <p>lerom ifsum</p>
-    </div>
-  );
+  return <div>Login</div>;
 }
 
 export default Login;
