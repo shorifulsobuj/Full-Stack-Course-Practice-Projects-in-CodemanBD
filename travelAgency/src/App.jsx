@@ -1,11 +1,13 @@
-import { Navbar, Hero, Footer } from "./components";
-import { hero } from "./data/travigodata";
+import { Navbar, Hero, Footer, Memory, Explore } from "./components";
+import { hero, navlinks, memory, placesAPI } from "./data/travigodata";
 
 const App = () => {
   return (
     <>
-      <Navbar />
+      <Navbar navlinks={navlinks} />
       <Hero hero={hero} />
+      <Memory memory={memory} />
+      <Explore title="Explore The Beauty of World" placesAPI={placesAPI} />
       <Footer />
     </>
   );
