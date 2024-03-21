@@ -1,8 +1,40 @@
-# React + Vite
+# Travigo Travel Agency by JSSTACK DEVELOPERS
+# Pre-requisites: Nothings! just stuck into this tutorial
+This project is developed and designed by JSSTACK DEVELOPERS (`#ahmed_js 😅🚀🚀🚀`).
+This is a [Vite.js](https://vitejs.dev/) project bootstrapped with [`npm create vite@latest`]. Designed with TailwindCSS!
+# Important Links: 📣📢📣📢📣📢✈✈✈
+### Go to ViteJS [https://vitejs.dev/] (https://vitejs.dev/)!
+### Go to TailwindCSS [https://tailwindcss.com/](https://tailwindcss.com/)!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Required Packages:
+```bash
+npm npm create vite@latest
+                  ## or
+yarn create vite
 
-Currently, two official plugins are available:
+npm install react-react-router-dom
+          ## or
+yarn add react-react-router-dom
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm install
+# or
+yarn instll
+
+# and Now:
+
+npm run dev
+# or
+yarn dev
+```
+Open [http://localhost:5173/](http://localhost:5173/) with your browser to see the result.
+
+You can start editing the page by modifying `src/App.jsx`. The page auto-updates as you edit the file.
+
+## Deploy on Vercel
+Check out our [This Project On Vercel](https://travigo-travel-jsstack.vercel.app) for more details.
